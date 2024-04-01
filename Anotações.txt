@@ -1,0 +1,7 @@
+Aqui tera o passo a passo do que precisa para criar uma api em Node.js
+
+- Inserir o comando:
+  - npm init -y
+
+- Instalando o express, como dependencia de projeto, para lidar com requisições na web:
+  - npm i express --save
