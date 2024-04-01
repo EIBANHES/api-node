@@ -6,13 +6,36 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
 - Instalando o express, como dependencia de projeto, para lidar com requisições na web:
   - npm i express --save
 
-- Criar pasta src na raiz do projeto
+- Criar pasta src na raiz do projeto:
   - Criar arquivo server.js
     - Importar o express
     - Inicializar o express
     - Setar porta do express
 
-- Executar node.js
+- Executar node.js:
   - Criar script de inicialização
     - "start": "node ./src/server.js"
     - npm start
+
+- Métodos de requisições:
+  - GET: leitura
+  - POST: criação
+  - PUT: Atualização
+  - DELETE: Deleção
+  - PATH: Atualização específica
+
+- Implementação do método get:
+  - app.get("aqui-vai-a-rota", (request, response) => { } );
+
+- Router params:
+  -> Consegue passar um parâmetro para a rota.
+    - https://enderecodoservidor.com.br/users/5 -> o número 5 é um parâmetro
+  -> Colocando o parâmetro na rota
+    - app.get("/message/:id", (request, response) => { } )
+    - app.get("/message/:id/:user", (request, response) => {
+                // devolve resposta
+                response.send(`
+                Id da mensagem: ${request.params.id}
+                Para o usuário${request.params.user}`
+                )
+              });
