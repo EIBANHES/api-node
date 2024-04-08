@@ -1,16 +1,12 @@
 //importação do express
 const express = require("express");
+const routes = require("./routes");
 
 //inicialização do express
 const app = express();
 app.use(express.json()); // padrao para receber informações.
 
-app.post("/users", (request, response) => {
-  const { name, email, password } = request.body;
-  response.json({name, email, password});
-});
-
-
+app.use(routes);
 
 //porta da aplicação
 const PORT = 3333;

@@ -47,3 +47,9 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
 - Nodemon, visualizador do servidor:
   - npm install nodemon --save-dev | dependencia de desenvolvimento
   - "dev": "nodemon ./src/server.js" | npm run dev
+
+- Organização do projeto:
+  - src:pasta
+    - server.js -> inicializar a app
+    - routes:pasta -> rotas do projeto
+    - controllers:pasta -> 
