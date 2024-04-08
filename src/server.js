@@ -3,22 +3,14 @@ const express = require("express");
 
 //inicialização do express
 const app = express();
+app.use(express.json()); // padrao para receber informações.
 
-// Método get, raiz
-app.get("/message/:id/:user", (request, response) => {
-  // desestruturação
-  const { id, user } = request.params;
-  // devolve resposta
-  response.send(`
-  Id da mensagem: ${id}
-  Para o usuário: ${user}`
-  )
+app.post("/users", (request, response) => {
+  const { name, email, password } = request.body;
+  response.json({name, email, password});
 });
 
-app.get("/users", (request, response) => {
-  const { page, limit } = request.query; // Query params
-  response.send(`Página: ${page}, Mostrar: ${limit}`);
-})
+
 
 //porta da aplicação
 const PORT = 3333;
