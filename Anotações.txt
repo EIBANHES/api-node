@@ -67,3 +67,6 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
   - O que são Middlewares?
     - Função que consegue interceptar uma requisição, consegue acessar o conteudo, 
       objeto de resposta e sabe o destino
+
+- Biblioteca para lidar com erros:
+  - npm install express-async-errors --save
