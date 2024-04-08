@@ -43,3 +43,7 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
 - Query Params:
   - Os valores não sao obrigatorios, diferente do Router params.
   - http://localhost:3333/users?page=2&limit=5
+
+- Nodemon, visualizador do servidor:
+  - npm install nodemon --save-dev | dependencia de desenvolvimento
+  - "dev": "nodemon ./src/server.js" | npm run dev
