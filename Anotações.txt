@@ -53,6 +53,7 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
     - server.js -> inicializar a app
     - routes:pasta -> rotas do projeto
     - controllers:pasta -> Parte responsavel pela regra de negocio.
+    - utlis:pasta -> tratamento de exceção.
 
 - Http codes
   - Códigos de respostas
