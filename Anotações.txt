@@ -39,3 +39,7 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
                 Para o usuário${request.params.user}`
                 )
               });
+
+- Query Params:
+  - Os valores não sao obrigatorios, diferente do Router params.
+  - http://localhost:3333/users?page=2&limit=5
