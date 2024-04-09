@@ -70,3 +70,4 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
 
 - Biblioteca para lidar com erros:
   - npm install express-async-errors --save
+  - Lida com erros.
