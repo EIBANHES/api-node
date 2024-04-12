@@ -77,3 +77,7 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
 
 - Encryptador de senha:
   - npm install bcryptjs
+
+- Query builder com Knex.js
+  - npm install knex --save
+    - npx knex init
