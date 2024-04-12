@@ -81,3 +81,6 @@ Aqui contém o passo a passo do que precisa para criar uma api em Node.js
 - Query builder com Knex.js
   - npm install knex --save
     - npx knex init
+  - rodando as migrations
+    - npx knex migrate:make createNotes 
+    - npx knex migrate:latest 
